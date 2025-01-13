@@ -1,4 +1,3 @@
-import Layout from '../layout'
 import ProjectCard from '../components/project-card'
 
 const projects = [

@@ -1,5 +1,6 @@
 import './globals.css';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
@@ -8,13 +9,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         {/* Header */}
         <header className="p-4 bg-white border-b border-gray-200">
           <nav className="container mx-auto flex justify-between items-center">
-            <a href="/" className="text-2xl font-bold">
+          <Link href="/" className="text-2xl font-bold">
               <Image src="/icon.png" alt="Logo" width={40} height={40} />
-            </a>
+            </Link>
             <ul className="flex space-x-8 text-m font-medium">
-              <li><a href="/">Home</a></li>
-              <li><a href="/portfolio">Portfolio</a></li>
-              <li><a href="/about">About</a></li>
+              <li><Link href="/">Home</Link></li>
+              <li><Link href="/portfolio">Portfolio</Link></li>
+              <li><Link href="/about">About</Link></li>
             </ul>
           </nav>
         </header>
