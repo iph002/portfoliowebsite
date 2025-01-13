@@ -17,7 +17,7 @@ module.exports = {
         // The animations you already have
         moveIAndSabell: {
           '0%': { transform: 'translateX(0)' },
-          '100%': { transform: 'translateX(-180px)' },
+          '100%': { transform: 'translateX(-170px)' },
         },
         fadeIn: {
           '0%': { opacity: '0', transform: 'translateX(50px)' },
