@@ -1,24 +1,20 @@
-import Link from 'next/link';
 import './globals.css';
+import Image from 'next/image';
 
-export default function Layout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
       <body className="min-h-screen flex flex-col">
         {/* Header */}
         <header className="p-4 bg-white border-b border-gray-200">
           <nav className="container mx-auto flex justify-between items-center">
-            <Link href="/" className="text-2xl font-bold">
-            <img
-                src="/icon.png"
-                alt="Logo"
-                className="h-10 w-auto" // Adjust height as needed
-              />
-            </Link>
+            <a href="/" className="text-2xl font-bold">
+              <Image src="/icon.png" alt="Logo" width={40} height={40} />
+            </a>
             <ul className="flex space-x-8 text-m font-medium">
-              <li><Link href="/">Home</Link></li>
-              <li><Link href="/portfolio">Portfolio</Link></li>
-              <li><Link href="/about">About</Link></li>
+              <li><a href="/">Home</a></li>
+              <li><a href="/portfolio">Portfolio</a></li>
+              <li><a href="/about">About</a></li>
             </ul>
           </nav>
         </header>
