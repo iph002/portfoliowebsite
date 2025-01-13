@@ -1,10 +1,10 @@
 import ProjectCard from '../components/project-card'
 
 const projects = [
-  { title: 'Snake', description: 'First own project, Java', link: 'https://project1.com' },
-  { title: 'Bysykkel', description: 'Machine Learning, Data Preparation, Frontend', link: 'https://project2.com' },
+  { title: 'Snake', description: 'First own project, Java', link: '' },
+  { title: 'Bysykkel', description: 'Machine Learning, Data Preparation, Frontend', link: '' },
   { title: 'Rodent Reboot', description: 'Group Project, Java,  LibGDX, Solid, AGILE, TEST-DRIVEN Design, Design Patterns', link: 'https://jpiversen.github.io/inf112_group_project/' },
-  { title: 'Project 4', description: 'Description of Project 4', link: 'https://project4.com' },
+  { title: 'Project 4', description: 'Description of Project 4', link: '' },
 ]
 
 export default function Portfolio() {
