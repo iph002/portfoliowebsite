@@ -1,6 +1,8 @@
 "use client";
 
 import React, { useState, useEffect } from 'react';
+import '@fortawesome/fontawesome-free/css/all.min.css';
+
 
 export default function Home() {
   const [pulsating, setPulsating] = useState(true);
@@ -115,8 +117,6 @@ export default function Home() {
       </div>
 
       {/* Text below name */}
-
-
       <div className={`absolute inset-0 flex items-center justify-center mt-10 top-20 right-40 ${showCompletedText ? 'animate-fadeIN' : 'opacity-0'}`}>
         <div className="text-2xl">
           Portfolio Website

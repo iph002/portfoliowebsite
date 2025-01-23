@@ -1,17 +1,43 @@
-import Link from 'next/link'
+import Link from "next/link"
+import Image from "next/image"
+import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "./ui/card"
+import { Button } from "./ui/button"
 
 interface ProjectCardProps {
   title: string
   description: string
   link: string
+  image?: string
 }
 
-export default function ProjectCard({ title, description, link }: ProjectCardProps) {
+export default function ProjectCard({ title, description, link, image }: ProjectCardProps) {
   return (
-    <Link href={link} target="_blank" rel="noopener noreferrer" className="block w-80 p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-50 transition-colors">
-      <h3 className="text-xl font-bold mb-2">{title}</h3>
-      <p className="text-gray-600">{description}</p>
-    </Link>
+    <Card className="w-[300] h-[400px] max-w-md flex flex-col"> {/* Fixed height and witdh*/}
+      <CardHeader>
+        <CardTitle className="truncate">{title}</CardTitle> {/* Truncate long titles */}
+      </CardHeader>
+      {image && (
+        <div className="relative w-full h-40"> {/* Fixed image height */}
+          <Image
+            src={image}
+            alt={title}
+            fill
+            style={{ objectFit: "cover" }}
+          />
+        </div>
+      )}
+      <CardContent className="flex-1 overflow-hidden">
+        <CardDescription className="line-clamp-3">{description}</CardDescription> {/* Limit description */}
+      </CardContent>
+      <CardFooter>
+        {link && (
+          <Button asChild>
+            <Link href={link} target="_blank" rel="noopener noreferrer">
+              View Project
+            </Link>
+          </Button>
+        )}
+      </CardFooter>
+    </Card>
   )
 }
-

@@ -13,7 +13,6 @@ module.exports = {
           '0%, 100%': { transform: 'scale(1)' },
           '50%': { transform: 'scale(3)' },
         },
-        
         // The animations you already have
         moveIAndSabell: {
           '0%': { transform: 'translateX(0)' },
@@ -35,15 +34,16 @@ module.exports = {
         },
       },
       animation: {
-        // Use the same name ("pulsateIP") for the animation
+        // Pulsate animation
         pulsateIP: 'pulsateIP 1.8s ease-in-out 1 forwards',
-
-        // The animations you already have
+        // Other animations
         moveIAndSabell: 'moveIAndSabell 1s ease-out forwards',
         fadeIn: 'fadeIn 0.5s ease-in forwards',
         fadeInFromBehindP: 'fadeInFromBehindP 0.5s ease-in forwards',
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/line-clamp'), // Add the line-clamp plugin
+  ],
 };
