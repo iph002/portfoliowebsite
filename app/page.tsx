@@ -70,7 +70,7 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="relative h-80 w-full bg-white ml-40">
+    <div className="relative h-screen/2 w-full bg-white ml-40">
       {/* Name container centered vertically and horizontally */}
       <div className="absolute inset-0 flex items-center justify-center">
         <div className={`flex items-center transition-transform ${showFullName ? 'animate-moveIAndSabell' : ''}`}>
