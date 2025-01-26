@@ -1,10 +1,10 @@
 export function Card({ children, className }: { children: React.ReactNode; className?: string }) {
-  return <div className={`rounded-lg shadow-lg bg-white border-gray-200 ${className}`}>{children}</div>
+  return <div className={`rounded-lg border-2 border-gray-200 shadow-lg bg-white ${className}`}>{children}</div>
 }
 
 export function CardHeader({ children, className }: { children: React.ReactNode; className?: string }) {
   return (
-    <div className={`p-4 border-b rounded-t-lg ${className}`}>
+    <div className={`p-4 rounded-t-lg ${className}`}>
       {children}
     </div>
   )
@@ -20,7 +20,7 @@ export function CardContent({ children, className }: { children: React.ReactNode
 
 export function CardFooter({ children, className }: { children: React.ReactNode; className?: string }) {
   return (
-    <div className={`p-4 border-t rounded-b-lg ${className}`}>
+    <div className={`p-4 rounded-b-lg ${className}`}>
       {children}
     </div>
   )

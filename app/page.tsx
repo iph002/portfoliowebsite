@@ -4,6 +4,7 @@ import React, { useState, useEffect } from 'react';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
 
+
 export default function Home() {
   const [pulsating, setPulsating] = useState(true);
   const [showFullName, setShowFullName] = useState(false);

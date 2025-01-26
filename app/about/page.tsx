@@ -8,7 +8,7 @@ export default function About() {
         Hello!
       </p>
       <p className="mb-4">
-        Under construction
+        work in progress
       </p>
       <a
         href="https://www.linkedin.com/in/isabell-philipp-3927862a4/"

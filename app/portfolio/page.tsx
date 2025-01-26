@@ -6,10 +6,9 @@ import { Button } from "../components/ui/button"
 import { ChevronLeft, ChevronRight } from "lucide-react"
 
 const projects = [
-  { title: "Snake", description: "First own project, Java", link: "" },
   {
     title: "Cyclist traffic forecasting",
-    description: "Model to forecast cyclist traffic, used FLask App.",
+    description: "Model to forecast cyclist traffic, using Python, Jupyter Notebook and HTML.",
     link: "https://github.com/iph002/Cyclist-Traffic-Forecast",
     image: "/images/sykkel.png",
   },
@@ -17,8 +16,12 @@ const projects = [
     title: "Rodent Reboot",
     description: "Group Project in Java using Agile and TDD.",
     link: "https://github.com/iph002/Rodent-Reboot",
+    image: "/images/rodentreboot.png",
   },
-  { title: "Project 4", description: "Description of Project 4", link: "" },
+  { title: "Portfolio Website", 
+    description: "Portfolio Website using HTML, Typescript and React.", 
+    link: "https://github.com/iph002/portfoliowebsite",
+    image: "/images/PortfolioWebsiteCardImage.png",},
 ]
 
 export default function Portfolio() {
