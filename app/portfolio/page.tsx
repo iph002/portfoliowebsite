@@ -46,13 +46,12 @@ export default function Portfolio() {
   const updateLayout = () => {
     const carouselContainer = document.getElementById("carousel-container")
     const cardElement = document.getElementById("current-card")
-    const buttonWidth = 8
 
 
     if (carouselContainer && cardElement) {
       const containerWidth = carouselContainer.offsetWidth
       const cardWidth = cardElement.offsetWidth
-      const totalWidth = cardWidth + 2 * (buttonWidth)
+      const totalWidth = cardWidth 
 
       // Check if the buttons and card fit within the container
       setIsCompact(totalWidth > containerWidth)
@@ -86,7 +85,7 @@ export default function Portfolio() {
         <div
           {...handlers}
           id="carousel-container"
-          className="flex items-center justify-center w-full space-x-4 px-4"
+          className="flex items-center justify-center w-full relative"
         >
           {/* Previous Button */}
           {!isCompact && (
@@ -94,7 +93,7 @@ export default function Portfolio() {
               onClick={prevProject}
               variant="outline"
               size="icon"
-              className="hidden sm:block"
+              className="hidden sm:block sm:mr-4"
             >
               <ChevronLeft className="h-4 w-4" />
             </Button>
@@ -116,7 +115,7 @@ export default function Portfolio() {
               onClick={nextProject}
               variant="outline"
               size="icon"
-              className="hidden sm:block"
+              className="hidden sm:block sm:ml-4"
             >
               <ChevronRight className="h-4 w-4" />
             </Button>
