@@ -12,7 +12,7 @@ interface ProjectCardProps {
 
 export default function ProjectCard({ title, description, link, image }: ProjectCardProps) {
   return (
-    <Card className="w-[300px] h-[400px] flex flex-col"> {/* Fixed height and witdh*/}
+    <Card className="w-full max-w-[300px] h-[400px] sm:max-w-[250px] lg:max-w-[300px] flex flex-col"> {/* Responsive sizes */}
       <CardHeader>
         <CardTitle className="truncate">{title}</CardTitle> {/* Truncate long titles */}
       </CardHeader>
