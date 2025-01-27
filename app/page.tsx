@@ -73,7 +73,7 @@ export default function Home() {
   return (
     <div className="relative h-screen/2 w-full bg-white ml-40">
       {/* Name container centered vertically and horizontally */}
-      <div className="absolute inset-0 flex items-center justify-center">
+      <div className="absolute ml-2 bottom-20 inset-0 flex items-center justify-center">
         <div className={`flex items-center transition-transform ${showFullName ? 'animate-moveIAndSabell' : ''}`}>
           {/* "I" */}
           <span className={`text-6xl font-bold ${pulsating ? 'animate-pulsateIP' : ''}`}>
@@ -118,7 +118,7 @@ export default function Home() {
       </div>
 
       {/* Text below name */}
-      <div className={`absolute inset-0 flex items-center justify-center mt-10 top-20 right-40 ${showCompletedText ? 'animate-fadeIN' : 'opacity-0'}`}>
+      <div className={`absolute inset-0 flex items-center justify-center mt-10 right-40 ${showCompletedText ? 'animate-fadeIN' : 'opacity-0'}`}>
         <div className="text-2xl">
           Portfolio Website
         </div>
